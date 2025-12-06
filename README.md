@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="\_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -36,30 +36,76 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 ### Premium Partners
 
 - **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
+- *[Tighten Co.](https://tighten.co)*
 - **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
+- *[Kirschbaum Development Group](https://kirschbaumdevelopment.com)*
+- *[64 Robots](https://64robots.com)*
 - **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- *[Cyber-Duck](https://cyber-duck.co.uk)*
 - **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
+- *[Jump24](https://jump24.co.uk)*
 - **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- *[Active Logic](https://activelogic.com)*
+- *[byte5](https://byte5.de)*
+- *[OP.GG](https://op.gg)*
 
-## Contributing
+## Langkah Instalasi
+Ikuti langkah - langkah berikut untuk menjalankan aplikasi ini di lingkungan lokal Anda:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 1. Clone Repository
+Clone repository ini ke komputer Anda:
+bash
 
-## Code of Conduct
+https://github.com/AzizatulHusniyah/Aplikasi-Servicedesk.git
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+### 2. Masuk ke Direktori Proyek
+Pindah ke direktori proyek yang baru saja di-clone:
+bash
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+cd Aplikasi-Servicedesk
+
+
+### 3. Install Dependensi
+Install dependensi yang diperlukan menggunakan Composer:
+bash
+
+composer install atau update composer
+
+
+### 4. Konfigurasi Environment
+Salin file .env.example menjadi .env dan sesuaikan konfigurasi database serta pengaturan lainnya:
+bash
+
+cp .env.example .env
+
+
+### 5. Generate Kunci Aplikasi
+Jalankan perintah berikut untuk menghasilkan kunci aplikasi:
+bash
+
+php artisan key:generate
+
+
+### 6. Migrasi Database
+Lakukan migrasi database untuk membuat tabel yang diperlukan oleh aplikasi:
+bash
+
+php artisan migrate
+
+php artisan db:seed
+
+php artisan db:seed --class=UserSeeder
+
+
+### 7. Jalankan Aplikasi
+Terakhir, jalankan aplikasi menggunakan perintah berikut:
+bash
+
+php artisan serve
+
+
+Aplikasi sekarang dapat diakses melalui http://localhost:8000.
 
 ## License
 
